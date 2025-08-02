@@ -6,11 +6,11 @@ import React, { useRef } from "react";
 import { Group } from "three";
 import { useStore } from "@/hooks/useStore";
 
-interface Props = {}
+type Props = {};
 
 gsap.registerPlugin(useGSAP);
 
-const Scene = (props: Props) => {
+export default function Scene({}: Props) {
   const isReady = useStore((state)=> state.isReady)
   const can1Ref = useRef<Group>(null);
   const can2Ref = useRef<Group>(null);
@@ -136,4 +136,3 @@ const Scene = (props: Props) => {
   );
 };
 
-export default Scene;
