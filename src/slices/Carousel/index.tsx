@@ -114,7 +114,7 @@ const Carousel = ({ slice }: CarouselProps): JSX.Element => {
           </Center>
 
           <Environment
-            files="/hdrs/lobby.hdr"
+            files="/hdr/lobby.hdr"
             environmentIntensity={0.6}
             environmentRotation={[0, 3, 0]}
           />

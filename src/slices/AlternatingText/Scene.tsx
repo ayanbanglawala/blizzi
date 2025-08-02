@@ -74,7 +74,7 @@ export default function Scene({}: Props) {
       rotation-y={isDesktop ? -0.3 : 0}
     >
       <FloatingCan flavor="strawberryLemonade" />
-      <Environment files={"/hdrs/lobby.hdr"} environmentIntensity={1.5} />
+      <Environment files={"/hdr/lobby.hdr"} environmentIntensity={1.5} />
     </group>
   );
 }

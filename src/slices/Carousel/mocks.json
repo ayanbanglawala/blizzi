@@ -7,9 +7,9 @@
 				"__TYPE__": "StructuredTextContent",
 				"value": [
 					{
-						"type": "heading1",
+						"type": "heading2",
 						"content": {
-							"text": "Freedom"
+							"text": "Flight"
 						}
 					}
 				]
@@ -20,10 +20,8 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Ut deserunt elit anim ",
-							"spans": []
-						},
-						"direction": "ltr"
+							"text": "Nulla exercitation commodo duis duis eiusmod amet exercitation ex exercitation nulla non laborum. Id enim nulla cupidatat nisi commodo sint sint Lorem. Ex exercitation do velit fugiat."
+						}
 					}
 				]
 			}

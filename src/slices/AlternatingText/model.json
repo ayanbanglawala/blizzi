@@ -24,7 +24,7 @@
                   "label": "Heading",
                   "placeholder": "",
                   "allowTargetBlank": true,
-                  "multi": "heading1"
+                  "single": "heading2"
                 }
               },
               "body": {
@@ -33,7 +33,7 @@
                   "label": "Body",
                   "placeholder": "",
                   "allowTargetBlank": true,
-                  "single": "paragraph"
+                  "multi": "paragraph,strong,em"
                 }
               }
             }

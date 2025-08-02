@@ -138,7 +138,7 @@ export default function Scene({ sentence, flavor }: SkyDiveProps) {
       <group rotation={[0, 0, 0.5]}>
         <FloatingCan
           ref={canRef}
-          flavour={flavor}
+          flavor={flavor}
           rotationIntensity={0}
           floatIntensity={3}
           floatSpeed={3}
@@ -160,7 +160,7 @@ export default function Scene({ sentence, flavor }: SkyDiveProps) {
 
       {/* Lights */}
       <ambientLight intensity={2} color="#9DDEFA" />
-      <Environment files="/hdrs/field.hdr" environmentIntensity={1.5} />
+      <Environment files="/hdr/field.hdr" environmentIntensity={1.5} />
     </group>
   );
 }

@@ -32,7 +32,7 @@ export function SodaCan({
   const { nodes } = useGLTF("/Soda-can.gltf");
 
   const labels = useTexture(flavorTextures);
-  
+
   // Fixes upside down labels
   labels.strawberryLemonade.flipY = false;
   labels.blackCherry.flipY = false;
@@ -55,7 +55,7 @@ export function SodaCan({
         receiveShadow
         geometry={(nodes.cylinder_1 as THREE.Mesh).geometry}
       >
-        <meshStandardMaterial roughness={0.15} metalness={0.6} map={label} />
+        <meshStandardMaterial roughness={0.15} metalness={0.7} map={label} />
       </mesh>
       <mesh
         castShadow
@@ -66,73 +66,3 @@ export function SodaCan({
     </group>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// "use client";
-
-// import { useGLTF, useTexture } from "@react-three/drei";
-// import * as THREE from "three";
-// import { MeshStandardMaterial } from "three";
-
-// useGLTF.preload("/0.gltf");
-
-// const flavorTextures = {
-//     lemonLime: "/textures/image_1.png",
-//   grape: "/textures/image_1.png",
-//   blackCherry: "/textures/image_1.png",
-//   strawberryLemonade: "/textures/image_1.png",
-//   watermelon: "/textures/image_1.png",
-// };
-
-// export type SodaCanProps = {
-//   flavor?: keyof typeof flavorTextures;
-//   scale?: number;
-// };
-
-// export function SodaCan({
-//   flavor = "blackCherry",
-//   scale = 1,
-//   ...props
-// }: SodaCanProps) {
-//   const { nodes } = useGLTF("/0.gltf") as any;
-
-//   const labels = useTexture(flavorTextures);
-
-//   // Ensure textures are correctly oriented
-//   Object.values(labels).forEach((texture) => {
-//     texture.flipY = false;
-//   });
-
-//   const label = labels[flavor];
-
-//   // Apply label to the existing mesh
-//   const material = new MeshStandardMaterial({
-//     map: label,
-//     metalness: 0.6,
-//     roughness: 0.2,
-//   });
-
-//   return (
-//     <group {...props} dispose={null} scale={scale} rotation={[0, -Math.PI, 0]}>
-//       <mesh
-//         castShadow
-//         receiveShadow
-//         geometry={nodes.tmpqzoexq0tobj.geometry}
-//         material={material}
-//       />
-//     </group>
-//   );
-// }

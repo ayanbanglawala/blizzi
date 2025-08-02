@@ -1,31 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import { BlizziLogo } from './BlizziLogo';
+import React from "react";
+import { FizziLogo } from "@/components/FizziLogo";
 
-// #region constants
+type Props = {};
 
-// #endregion
-
-// #region styled-components
-
-// #endregion
-
-// #region functions
-
-// #endregion
-
-// #region component
-interface HeaderProps {
+export default function Header({}: Props) {
+  return (
+    <header className="-mb-28 flex justify-center py-4">
+      <FizziLogo className="z-10 h-20 cursor-pointer text-sky-800" />
+    </header>
+  );
 }
-
-/**
- * 
- */
-const Header = ({}: HeaderProps): JSX.Element => {
-    return <header className="-mb-28 flex justify-center py-4">
-        <BlizziLogo className='z-10 h-20 cursor-pointer text-sky-800' />
-    </header>;
-}
-// #endregion
-
-export default Header;
