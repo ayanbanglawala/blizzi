@@ -1,15 +1,14 @@
 "use client";
+
 import { Canvas } from "@react-three/fiber";
-import React, { Suspense } from "react";
-import { View, Stats } from "@react-three/drei";
+import { View } from "@react-three/drei";
+import { Suspense } from "react";
 import dynamic from "next/dynamic";
-import { type } from "os";
 
 const Loader = dynamic(
   () => import("@react-three/drei").then((mod) => mod.Loader),
   { ssr: false },
 );
-
 
 type Props = {};
 
@@ -21,25 +20,26 @@ export default function ViewCanvas({}: Props) {
           position: "fixed",
           top: 0,
           left: "50%",
+          transform: "translateX(-50%)",
           overflow: "hidden",
           pointerEvents: "none",
           zIndex: 30,
-          transform: "translateX(-50%)",
         }}
-        camera={{ fov: 30 }}
         shadows
         dpr={[1, 1.5]}
         gl={{ antialias: true }}
+        camera={{
+          fov: 30,
+        }}
       >
-        <Suspense fallback={null} >
-        <View.Port />
+        <Suspense fallback={null}>
+          <View.Port />
         </Suspense>
-        {/* <Stats showPanel={0} /> */}
       </Canvas>
       <Loader />
     </>
   );
-};
+}
 
 // "use client"
 // import { Canvas } from '@react-three/fiber'
