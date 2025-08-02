@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { Group } from "three";
 import { useStore } from "@/hooks/useStore";
 
-interface Props {}
+interface Props = {}
 
 gsap.registerPlugin(useGSAP);
 
