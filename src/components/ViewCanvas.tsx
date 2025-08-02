@@ -3,15 +3,17 @@ import { Canvas } from "@react-three/fiber";
 import React, { Suspense } from "react";
 import { View, Stats } from "@react-three/drei";
 import dynamic from "next/dynamic";
+import { type } from "os";
 
 const Loader = dynamic(
   () => import("@react-three/drei").then((mod) => mod.Loader),
   { ssr: false },
 );
 
-interface Props {}
 
-export const ViewCanvas = (props: Props) => {
+type Props = {};
+
+export default function ViewCanvas({}: Props) {
   return (
     <>
       <Canvas
