@@ -9,7 +9,7 @@ const Loader = dynamic(
   { ssr: false },
 );
 
-interface Props = {}
+interface Props {}
 
 export const ViewCanvas = (props: Props) => {
   return (
