@@ -1,0 +1,203 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.4.0)"
+    },
+    "extensionsUsed": [
+        "KHR_materials_volume",
+        "FB_ngon_encoding"
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 525839,
+            "type": "VEC3",
+            "max": [
+                0.662202775478363,
+                0.62079918384552,
+                0.3784348964691162
+            ],
+            "min": [
+                -0.6926275491714478,
+                -0.9981217384338379,
+                -0.38368359208106995
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 525839,
+            "type": "VEC3",
+            "max": [
+                0.9999955892562866,
+                0.9999994039535522,
+                1.0
+            ],
+            "min": [
+                -0.999997615814209,
+                -0.9999967813491821,
+                -0.9999995827674866
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 525839,
+            "type": "VEC2",
+            "max": [
+                0.9999640583992004,
+                0.9999706745147705
+            ],
+            "min": [
+                0.00002069000038318336,
+                0.000007212162017822266
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 2983707,
+            "type": "SCALAR",
+            "max": [
+                525838
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 28761676,
+            "uri": "0_0.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 6310068,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 6310068,
+            "byteLength": 6310068,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 12620136,
+            "byteLength": 4206712,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 16826848,
+            "byteLength": 11934828,
+            "target": 34963
+        }
+    ],
+    "images": [
+        {
+            "uri": "textures/image_1.png"
+        },
+        {
+            "uri": "textures/image_0.png"
+        }
+    ],
+    "materials": [
+        {
+            "name": "pbr_material",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicRoughnessTexture": {
+                    "index": 1
+                },
+                "metallicFactor": 0.800000011920929
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "meshes[0]",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 3,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "0",
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "world",
+            "children": [
+                2
+            ],
+            "extras": {
+                "name": "world"
+            }
+        },
+        {
+            "name": "tmpqzoexq0tobj",
+            "mesh": 0,
+            "extras": {
+                "units": "meters",
+                "processed": true,
+                "file_path": "/tmp/tmpqzoexq0t.obj",
+                "file_name": "tmpqzoexq0t.obj",
+                "from_gltf_primitive": false,
+                "name": "tmpqzoexq0t.obj",
+                "node": "tmpqzoexq0t.obj"
+            }
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        },
+        {
+            "magFilter": 9729,
+            "minFilter": 9987
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "source": 0,
+            "sampler": 0
+        },
+        {
+            "source": 1,
+            "sampler": 1
+        }
+    ],
+    "scene": 0
+}
