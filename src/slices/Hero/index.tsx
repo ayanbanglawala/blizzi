@@ -119,16 +119,16 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           <div className="grid auto-rows-min place-items-center text-center">
             <h1 className="hero-header text-7xl font-black uppercase leading-[.8] text-orange-500 md:text-[9rem] lg:text-[13rem]">
               <TextSplitter
-                text={asText(slice.primary.heading)}
+                text={'Pop Now'}
                 wordDisplayStyle="block"
                 className="hero-header-word"
               />
             </h1>
             <div className="hero-subheading mt-12 text-5xl font-semibold text-sky-950 lg:text-6xl">
-              <PrismicRichText field={slice.primary.subheading} />
+              Fizz with Attitude
             </div>
             <div className="hero-body text-2xl font-normal text-sky-950">
-              <PrismicRichText field={slice.primary.body} />
+              3-5g sugar. 9g fiber. 5 delicious flavors.
             </div>
             <Button
               buttonLink={slice.primary.button_link}
@@ -145,10 +145,10 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           />
           <div>
             <h2 className="text-side-heading text-balance text-6xl font-black uppercase text-sky-950 lg:text-8xl">
-              <TextSplitter text={asText(slice.primary.second_heading)} />
+              <TextSplitter text={'Five Flavors. Zero Boredom.'} />
             </h2>
             <div className="text-side-body mt-4 max-w-xl text-balance text-xl font-normal text-sky-950">
-              <PrismicRichText field={slice.primary.second_body} />
+              Made with real fruit juice and a splash of cane sugar. No artificial sweeteners. No nonsense. Just five bold flavors waiting to be your favorite.
             </div>
           </div>
         </div>

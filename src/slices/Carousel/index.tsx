@@ -56,7 +56,7 @@ const Carousel = ({ slice }: CarouselProps): JSX.Element => {
     tl.to(
       sodaCanRef.current.rotation,
       {
-        y:
+        z:
           index > currentFlavorIndex
             ? `-=${Math.PI * 2 * SPINS_ON_CHANGE}`
             : `+=${Math.PI * 2 * SPINS_ON_CHANGE}`,
@@ -94,8 +94,7 @@ const Carousel = ({ slice }: CarouselProps): JSX.Element => {
         <PrismicText field={slice.primary.heading} />
       </h2>
 
-      <div className="grid grid-cols-3 items-center justify-items-center gap-4 w-full">
-
+      <div className="grid grid-cols-[auto,auto,auto] items-center">
         {/* Left */}
         <ArrowButton
           onClick={() => changeFlavor(currentFlavorIndex + 1)}
